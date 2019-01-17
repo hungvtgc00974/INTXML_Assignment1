@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xsd:schema version="1.0"
+            xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified">
+    <xsd:element name="Customers">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Customer" minOccurs="1" maxOccurs="50">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="CustomerID" type="xsd:string"/>
+                            <xsd:element name="CompanyName" type="xsd:string"/>
+                            <xsd:element name="ContactName" type="xsd:string"/>
+                            <xsd:element name="ContactTitle" type="xsd:string"/>
+                            <xsd:element name="Address" type="xsd:string"/>
+                            <xsd:element name="City" type="xsd:string"/>
+                            <xsd:element name="Region" type="xsd:string"/>
+                            <xsd:element name="PostalCode" type="xsd:string"/>
+                            <xsd:element name="Country" type="xsd:string"/>
+                            <xsd:element name="Phone" type="xsd:string"/>
+                            <xsd:element name="Fax" type="xsd:string"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
